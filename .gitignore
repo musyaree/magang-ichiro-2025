@@ -1,9 +1,36 @@
-# ROS 2 build artifacts
+# Folder ROS 2 hasil build
+# Ini adalah hal paling penting untuk diabaikan
 build/
 install/
 log/
 
-# Python virtual environment and cache
+# Lingkungan virtual dan cache Python
+# Pola `**/` memastikan ini diabaikan di semua subdirektori
 **/venv/
 **/__pycache__/
 *.pyc
+
+# Direktori dan file spesifik IDE/Editor
+# Mengabaikan cache dan pengaturan lokal VS Code & JetBrains
+.vscode/
+.idea/
+*.code-workspace
+
+# File sementara CMake
+# Dibuat saat proses build C++
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# File sementara dari OS dan editor lain
+# Umumnya ada di macOS, Linux, atau saat editor crash
+.DS_Store
+*.swp
+*~
+
+# Artefak packaging Python
+# Dibuat saat Anda mencoba membuat distribusi paket Python
+build/
+dist/
+*.egg-info/
