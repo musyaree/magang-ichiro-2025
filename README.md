@@ -1,6 +1,6 @@
 ## Struktur Repositori
 
-Repositori ini berisi beberapa *package* di dalam folder `src/`:
+Repositori ini berisi beberapa *package* di dalam folder `src/`, yaitu:
 
 - **`walking_simulation/`**: Package utama untuk proyek simulasi. Berisi skrip Python untuk kontrol MuJoCo dan package C++ `aruku` untuk algoritma berjalan.
 - **`my_cpp_pkg/`**: Package latihan berisi berbagai node C++ yang saya buat untuk belajar (misalnya: `robot_news_station` sebagai publisher).
